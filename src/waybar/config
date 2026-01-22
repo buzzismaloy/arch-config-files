@@ -12,10 +12,10 @@
     "modules-center": [
       "hyprland/window"
     ],
-    "modules-right": [ 
+    "modules-right": [
     "group/hardware",
     "group/volume",
-    "group/connections", 
+    "group/connections",
     "battery",
     "clock",
     "custom/powermenu",
@@ -29,7 +29,7 @@
     },
     "hyprland/window": {
       "format": "{}",
-      "max-length": 30,
+      "max-length": 15,
       "rewrite": {
         "": "Hyprland"
       },
@@ -95,7 +95,7 @@
 	  "children-class" : "not-hardware",
 	  "transition-left-to-right": false,
       },
-      "modules": [ 
+      "modules": [
 	  "temperature",
           "cpu",
 	  "memory",
@@ -121,12 +121,12 @@
 	"format-connected": " connected",
 	"format-connected-battery": " {device_battery_percentage}%",
 	"format-no-controller": "no ctrller",
-	"format-alt": " {device_alias}", 
+	"format-alt": " {device_alias}",
 	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
 	"tooltip-format-disabled": "Bluetooth Disabled",
 	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
 	"tooltip-format-enumerate-connected": "{device_alias}\n{device_address}",
-        "tooltip-format-enumerate-connected-battery": "{device_alias}\n{device_address}\n{device_battery_percentage}%",	
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\n{device_address}\n{device_battery_percentage}%",
 
 	"on-click-right": "blueman-manager",
 	"interval": 5,
@@ -138,7 +138,7 @@
 	  "children-class" : "not-connections",
 	  "transition-left-to-right": false,
       },
-      "modules": [ 
+      "modules": [
 	  "network",
 	  "bluetooth",
       ]
@@ -177,7 +177,7 @@
 	  "children-class" : "not-volume",
 	  "transition-left-to-right": false,
       },
-      "modules": [ 
+      "modules": [
 	  "pulseaudio",
 	  "backlight",
           "pulseaudio#microphone",
