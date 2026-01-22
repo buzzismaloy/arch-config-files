@@ -3,11 +3,6 @@ if status is-interactive
     fastfetch
 end
 
-# Added by LM Studio CLI (lms)
-set -gx PATH $PATH /home/nyxnyx/.lmstudio/bin
-# End of LM Studio CLI section
-
-
 # =======
 # ALIASES
 # =======
