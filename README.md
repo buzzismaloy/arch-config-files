@@ -1,7 +1,7 @@
 <!-- INFORMATION -->
 <h1 align="left">About</h1>
 
-<img src="screenshots/2.png" alt="rice" align="right" width="500px">
+<img src="assets/screenshots/2.png" alt="rice" align="right" width="500px">
 
 </br>
 
@@ -18,11 +18,11 @@
 
 <!-- IMAGES -->
 ## Gallery
-![gallery](screenshots/1.jpg)
-![gallery](screenshots/2.png)
-![gallery](screenshots/3.jpg)
-![gallery](screenshots/4.jpg)
-![gallery](screenshots/5.jpg)
+![gallery](assets/screenshots/1.jpg)
+![gallery](assets/screenshots/2.png)
+![gallery](assets/screenshots/3.jpg)
+![gallery](assets/screenshots/4.jpg)
+![gallery](assets/screenshots/5.jpg)
 
 <!-- HOTKEYS -->
 ## HotKeys
