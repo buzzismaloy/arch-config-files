@@ -37,7 +37,9 @@
 		"format": "{}",
 		"max-length": 20,
 		"rewrite": {
-			"": "Desktop"
+			"": "Desktop",
+			".*Firefox.*": "Firefox",
+			"^~$": "Kitty terminal"
 		},
 		"separate-outputs": true,
 	},
@@ -180,7 +182,7 @@
 	},
 
 	// Keyboard state
-	"keyboard-state": {
+	"keyboard-state": {	
 		"capslock": true,
 		"format": {
 			"capslock": "{name} {icon}"
