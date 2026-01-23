@@ -3,8 +3,8 @@
 ## Random wallpaper
 Automatic desktop wallpaper changer
 
-**📂 Location:** `~/bin/random_wallpaper.sh`  
-**󰌌 Hotkeys:** `super + R`  
+**Location:** `~/bin/random_wallpaper.sh`
+**Hotkeys:** `super + R`
 
 **Features:**
 - Random image selection from specified directory
@@ -16,8 +16,8 @@ Automatic desktop wallpaper changer
 ## Toggle waybar
 Waybar visibility management
 
-**📂 Location:** `~/bin/toggle_waybar.sh`  
-**󰌌 Hotkeys:** `super + U`  
+**Location:** `~/bin/toggle_waybar.sh`
+**Hotkeys:** `super + U`
 
 **Features:**
 - Instant panel hide/show
