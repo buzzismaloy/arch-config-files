@@ -16,7 +16,7 @@
 	border: none;
 	border-radius: 0;
 	font-family: 'JetBrains Mono', 'Hack Nerd Font', 'UbuntuMono', monospace;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 600;
 	min-height: 0;
 	padding: 0;
@@ -104,7 +104,7 @@ tooltip label {
 	padding: 8px 16px;
 	border-radius: 32px;
 	border: 5px solid @border-color;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 /* -----------------------------------------------------------------------------
@@ -118,7 +118,7 @@ tooltip label {
 	margin: 6px 2px 6px 2px;
 	padding: 8px 12px;
 	border-radius: 12px;
-	font-size: 15px;
+	font-size: 13px;
 }
 
 /* -----------------------------------------------------------------------------
@@ -285,7 +285,7 @@ tooltip label {
 #custom-launcher {
 	background: @mauve;
 	color: @base;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: bold;
 	margin: 6px 2px 6px 8px;
 	padding: 8px 14px 8px 6px;
@@ -296,7 +296,7 @@ tooltip label {
 #custom-powermenu {
 	background: @mauve;
 	color: @base;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: bold;
 	margin: 6px 8px 6px 2px;
 	padding: 6px 10px;
