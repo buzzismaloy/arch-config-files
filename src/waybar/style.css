@@ -55,7 +55,7 @@ tooltip label {
 	padding: 4px;
 	margin: 6px 6px;
 	border-radius: 12px;
-	border: 2px solid @border-color;
+	border: 2px solid @mauve;
 }
 
 #workspaces button {
@@ -76,11 +76,10 @@ tooltip label {
 
 #workspaces button.active,
 #workspaces button.focused {
-	
 	color: @subtext0;
 	font-weight: bold;
 	opacity: 1;
-	border-color: @pink;
+	border-color: @flamingo;
 }
 
 #workspaces button.empty {
@@ -103,7 +102,7 @@ tooltip label {
 	color: @text;
 	padding: 8px 16px;
 	border-radius: 32px;
-	border: 5px solid @border-color;
+	border: 5px solid @rosewater;
 	font-weight: 600;
 }
 
@@ -313,7 +312,7 @@ tooltip label {
 	padding: 6px 10px;
 	margin: 6px 8px 6px 2px;
 	border-radius: 12px;
-	border: 1px solid @border-color;
+	border: 1px solid @mauve;
 }
 
 #tray > .passive {
