@@ -180,7 +180,7 @@
 	},
 
 	// Keyboard state
-	"keyboard-state": {	
+	"keyboard-state": {
 		"capslock": true,
 		"format": {
 			"capslock": "{name} {icon}"
