@@ -1,285 +1,204 @@
-//  __  __           _       _            
-// |  \/  | ___   __| |_   _| | ___  ___  
-// | |\/| |/ _ \ / _` | | | | |/ _ \/ __| 
-// | |  | | (_) | (_| | |_| | |  __/\__ \ 
-// |_|  |_|\___/ \__,_|\__,_|_|\___||___/ 
-//                                        
-//  
-// by Stephan Raabe (2023) 
-// ----------------------------------------------------- 
-//
 {
-    // Workspaces
-    "hyprland/workspaces" : {
-        "on-click": "activate",
-        "active-only": false,
-        "all-outputs": true,
-        "format": "{}",
-        "format-icons": {
-			"urgent": "",
+	// Language(hyprland)
+	"hyprland/language": {
+		"format": "{shortDescription} 󰌌 ",
+		//"tooltip": true,
+		//"tooltip-format": "{long}"
+	},
+
+	// Tray
+	"tray": {
+		"icon-size": 20,
+		"spacing": 8,
+		"show-passive-items": true,
+		"reverse-direction": false,
+		"smooth-scrolling-threshold": 1.0
+	},
+
+	// Hyprland Workspaces
+	"hyprland/workspaces": {
+		"format": "{}",
+		"on-click": "activate",
+		"active-only": false,
+		"all-outputs": false,
+		"format-icons": {
 			"active": "",
+			"urgent": "",
 			"default": ""
-        },
-        "persistent-workspaces": {
-            // START WORKSPACES
-    "*": 5
-            // END WORKSPACES
-        }       
-    },
+		},
+		"sort_by_number": true,
+		"persistent-workspaces": {
+			"*": 5, //5 workspaces by defaul on every monitor
+		},
+	},
 
-    // Taskbar
-    "wlr/taskbar": {
-        "format": "{icon}",
-        "icon-size": 18,
-        "tooltip-format": "{title}",
-        "on-click": "activate",
-        "on-click-middle": "close",
-        "ignore-list": [
-           "Alacritty"
-        ],
-        "app_ids-mapping": {
-            "firefoxdeveloperedition": "firefox-developer-edition"
-        },
-        "rewrite": {
-            "Firefox Web Browser": "Firefox",
-            "Foot Server": "Terminal"
-        }
-    },
+	// Hyprland window
+	"hyprland/window": {
+		"format": "{}",
+		"max-length": 20,
+		"rewrite": {
+			"": "Desktop"
+		},
+		"separate-outputs": true,
+	},
 
-    // Hyprland Window
-    "hyprland/window": {
-        "rewrite": {
-            "(.*) - Brave": "$1",
-            "(.*) - Chromium": "$1",
-            "(.*) - Brave Search": "$1",
-            "(.*) - Outlook": "$1",
-            "(.*) Microsoft Teams": "$1"
-        },
-        "separate-outputs": true
-    },
+	// Time and calendar
+	"clock": {
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"format": "{:%I:%M%p %a}",
+		"format-alt": "{:%Y-%m-%d}",
+		"interval": 30,
+		"calendar": {
+			"mode": "month",
+			"mode-mon-col": 3,
+			"weeks-pos": "right",
+			"format": {
+				"months": "<span color='#ffead3'><b>{}</b></span>",
+				"days": "<span color='#ecc6d9'><b>{}</b></span>",
+				"weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+				"weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+				"today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+			}
+		}
+	},
 
-    // Empty
-    "custom/empty": {
-        "format": ""
-    },
-    
-    // Cliphist
-    "custom/cliphist": {
-        "format": "",
-        "on-click": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh",
-        "on-click-right": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh d",
-        "on-click-middle": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh w",
-        "tooltip": false
-    },
+	// CPU, RAM, Temperature
+	"cpu": {
+		"format": "CPU: {usage}%",
+		"tooltip": true
+	},
 
-    // Filemanager Launcher
-    "custom/filemanager": {
-        "format": "",
-        "on-click": "thunar",
-        "tooltip": false
-    },
+	"memory": {
+		"format": "RAM: {}%",
+		"tooltip": true,
+		"interval": 20
+	},
 
-    // Calculator
-    "custom/calculator": {
-        "format": "",
-        "on-click": "qalculate-gtk",
-        "tooltip": false
-    },
+	"temperatue": {
+		"format": "{icon} {temperatureC}°C",
+		"format-icons": ["", "", ""],
+		"tooltip": false,
+		"critical-threshold": 80
+	},
 
-    // Wofi Application Launcher
-    "custom/appmenu": {
-        // START APPS LABEL
-        "format": "Apps",
-        // END APPS LABEL
-        "on-click": "sleep 0.2;wofi -show drun -replace",
-        "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
-        "tooltip": false
-    },
+	// Battery
+	"battery": {
+		"interval": 5,
+		"states": {
+			"warning": 25,
+			"critical": 15
+		},
+		"format": "{icon}  {capacity}%",
+		"format-charging": " {capacity}%",
+		"format-plugged": " {capacity}%",
+		"format-icons": ["", "", "", "", ""]
+	},
 
-    // Wofi Application Launcher
-    "custom/appmenuicon": {
-        "format": "",
-        "on-click": "wofi -show drun -replace",
-        "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
-        "tooltip": false
-    },    
+	// Network
+	"network": {
+		"format-wifi": "  {bandwidthDownBits}",
+		"format-ethernet": "  {cidr}",
+		"format-disconnected": "⚠",
+		"tooltip-format": "  {ifname} via {gwaddr}",
+		"tooltip-format-wifi": "  {essid}\nStr: {signalStrength}%\nUp: {bandwidthUpBits}\nDown: {bandwidthDownBits}",
+		"tooltip-format-ethernet": "  {ifname}/{cidr}\nIP: {ipaddr}\nUp: {bandwidthUpBits}\nDown: {bandwidthDownBits}",
+		"tooltip-format-disconnected": "Disconnected ⚠",
+		"format-linked": "{ifname} (No IP) ",
+		"format-alt": "{ifname}: {ipaddr}/{cidr}",
+		"on-click-right": "exec kitty -e nmtui-connect",
+		"interval": 3,
+		"max-length": 50
+	},
 
-    // Power Menu
-    "custom/exit": {
-        "format": "",
-        "on-click": "wlogout",
-        "tooltip": false
-    },
+	// Bluetooth
+	"bluetooth": {
+		"format": " {status}",
+		"format-disabled": " off",
+		"format-off" : " disabled",
+		"format-connected": " connected",
+		"format-connected-battery": " {device_battery_percentage}%",
+		"format-no-controller": "no ctrller",
+		"format-alt": " {device_alias}",
+		"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+		"tooltip-format-disabled": "Bluetooth Disabled",
+		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+		"tooltip-format-enumerate-connected": "{device_alias}\n{device_address}",
+		"tooltip-format-enumerate-connected-battery": "{device_alias}\n{device_address}\n{device_battery_percentage}%",
 
-    // Keyboard State
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
-    },
+		"on-click-right": "blueman-manager",
+		"interval": 5,
+	},
 
-    // System tray
-    "tray": {
-        "icon-size": 21,
-        "spacing": 10
-    },
+	// Backlight
+	"backlight": {
+		"format": "{icon} {percent}%",
+		"format-icons": ["", ""],
+		"tooltip": false,
+		"on-scroll-down": "brightnessctl set 5%-",
+		"on-scroll-up": "brightnessctl set +5%"
+	},
 
-    // Clock
-    "clock": {
-        // TIMEDATEFORMAT
-        "format": "{:%H:%M %a}",
-        // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        // START CLOCK FORMAT
-        "format-alt": "{:%Y-%m-%d}"
-        // END CLOCK FORMAT
-    },
+	// Audio
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-bluetooth": "{volume}% {icon}",
+		"format-bluetooth-muted": " {icon}",
+		"format-muted": "",
+		"format-icons": {
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"phone": "",
+			"portable": "",
+			"car": "",
+			"default": ["", "", ""]
+		},
+      "on-click": "pavucontrol"
+	},
 
-    // System
-    "custom/system": {
-        "format": "",
-        "tooltip": false
-    },
+	// Microphone
+	"pulseaudio#microphone": {
+		"format": "{format_source}",
+		"format-source": " {volume}%",
+		"format-source-muted": "",
+		"on-click": "pavucontrol",
+		"tooltip": true,
+	},
 
-    // CPU
-    "cpu": {
-        "format": "/ C {usage}% ",
-        "on-click": "alacritty -e htop"
-    },
+	// Powermenu
+	"custom/powermenu": {
+		"format": "⏻",
+		"tooltip": false,
+		"on-click": "wlogout -b 2"
+	},
 
-    // Memory
-    "memory": {
-        "format": "/ M {}% ",
-        "on-click": "alacritty -e htop"
-    },
+	// Launcher wofi
+	"custom/launcher": {
+		"format": "",
+		"on-click": "wofi --show drun",
+		"tooltip": false
+	},
 
-    // Harddisc space used
-    "disk": {
-        "interval": 30,
-        "format": "D {percentage_used}% ",
-        "path": "/",
-        "on-click": "alacritty -e htop"
-    }, 
+	// Keyboard state
+	"keyboard-state": {	
+		"capslock": true,
+		"format": {
+			"capslock": "{name} {icon}"
+		},
+		"format-icons": {
+			"locked": " ",
+			"unlocked": ""
+		}
+	},
 
-    "hyprland/language": {
-        "format": "/ K {short}"
-    },
-
-    // Group Hardware
-    "group/hardware": {
-        "orientation": "inherit",
-        "drawer": {
-            "transition-duration": 300,
-            "children-class": "not-memory",
-            "transition-left-to-right": false
-        },        
-        "modules": [
-            "custom/system",
-            "disk",
-            "cpu",
-            "memory",
-            "hyprland/language"
-        ]
-    },
-    
-    // Group Settings
-    "group/settings": {
-        "orientation": "horizontal",
-        "modules": [
-            "custom/settings",
-        ]
-    },
-
-    // Group Quicklinks
-    "group/quicklinks": {
-        "orientation": "horizontal",
-        "modules": [
-            "custom/filemanager",
-         ]
-    },
-
-    // Network
-    "network": {
-        "format": "{ifname}",
-        "format-wifi": "   {signalStrength}%",
-        "format-ethernet": "  {ifname}",
-        "format-disconnected": "Disconnected",
-        "tooltip-format": " {ifname} via {gwaddri}",
-        "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
-        "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
-        "tooltip-format-disconnected": "Disconnected",
-        "max-length": 50,
-        "on-click": "nm-connection-editor"
-    },
-
-    // Battery
-    "battery": {
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon}   {capacity}%",
-        "format-charging": "  {capacity}%",
-        "format-plugged": "  {capacity}%",
-        "format-alt": "{icon}  {time}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": [" ", " ", " ", " ", " "]
-    },
-
-    // Pulseaudio
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{icon} {volume}%",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", " ", " "]
-        },
-        "on-click": "pavucontrol"
-    },
-
-    // Bluetooth
-    "bluetooth": {
-        "format": " {status}",
-        "format-disabled": "",
-        "format-off": "",
-        "interval": 30,
-        "on-click": "blueman-manager",
-        "format-no-controller": ""
-    },
-
-    // Other
-    "user": {
-        "format": "{user}",
-        "interval": 60,
-        "icon": false,
-    },
-
-    // Idle Inhibator
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "tooltip": true,
-        "format-icons":{
-            "activated": "",
-            "deactivated": ""
-        },
-        "on-click-right": "hyprlock"        
-    }
+	// Idle inhibitor
+	"idle_inhibitor": {
+		"format": "{icon}",
+		"format-icons": {
+			"activated": "󰌾",
+			"deactivated": "󰌵"
+		},
+		"tooltip-format-activated": "Idle inhibitor: ON",
+		"tooltip-format-deactivated": "Idle inhibitor: OFF"
+	}
 }
-
-
