@@ -69,7 +69,7 @@
       "tooltip": true
     },
     "memory": {
-      "format": "Mem: {}% "
+      "format": "RAM: {}% "
     },
     "temperature": {
       "critical-threshold": 80,
