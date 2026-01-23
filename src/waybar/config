@@ -31,7 +31,7 @@
       "format": "{}",
       "max-length": 15,
       "rewrite": {
-        "": "Hyprland"
+        "": "Desktop"
       },
       "separate-outputs": true,
     },
@@ -74,7 +74,8 @@
     "temperature": {
       "critical-threshold": 80,
       "format": "{icon} {temperatureC}°C",
-      "format-icons": ["", "", ""]
+      "format-icons": ["", "", ""],
+	  "tooltip": false
     },
     "disk": {
       "interval": 500,
