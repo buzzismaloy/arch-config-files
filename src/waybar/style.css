@@ -102,7 +102,7 @@ tooltip label {
 	color: @text;
 	padding: 8px 16px;
 	border-radius: 32px;
-	border: 5px solid @rosewater;
+	border: 2px solid @rosewater;
 	font-weight: 600;
 }
 
@@ -114,7 +114,7 @@ tooltip label {
 	background: @blue;
 	color: @base;
 	font-weight: bold;
-	margin: 6px 2px 6px 2px;
+	margin: 6px 2px;
 	padding: 8px 12px;
 	border-radius: 12px;
 	font-size: 13px;
@@ -127,7 +127,7 @@ tooltip label {
 #memory {
 	background: @background-primary;
 	color: @teal;
-	border-left: 4px solid @teal;
+	border-left: 3px solid @teal;
 	border-radius: 0px 12px 12px 0px;
 	margin: 6px 1px 6px 0px;
 	padding: 8px 12px;
@@ -136,7 +136,7 @@ tooltip label {
 #cpu {
 	background: @background-primary;
 	color: @violet;
-	border-left: 4px solid @violet;
+	border-left: 3px solid @violet;
 	border-radius: 12px 0px 0px 12px;
 	margin: 6px 0px 6px 2px;
 	padding: 8px 12px;
@@ -145,7 +145,7 @@ tooltip label {
 #temperature {
 	background: @background-primary;
 	color: @lightblue;
-	border-left: 4px solid @lightblue;
+	border-left: 3px solid @lightblue;
 	border-radius: 12px 0 0 12px;
 	margin: 6px 0 6px 1px;
 	padding: 8px 12px;
@@ -154,7 +154,7 @@ tooltip label {
 #temperature.critical {
 	background: @error;
 	color: @base;
-	border-left: 4px solid @maroon;
+	border-left: 3px solid @maroon;
 }
 
 /* -----------------------------------------------------------------------------
@@ -164,7 +164,7 @@ tooltip label {
 #battery {
 	background: @background-primary;
 	color: @green;
-	border-left: 4px solid @green;
+	border-left: 3px solid @green;
 	margin: 6px 2px 6px 0;
 	padding: 8px 12px;
 	border-radius: 0 12px 12px 0;
@@ -172,13 +172,13 @@ tooltip label {
 
 #battery.charging {
 	color: @yellow;
-	border-left: 4px solid @yellow;
+	border-left: 3px solid @yellow;
 }
 
 #battery.warning {
 	background: @warning;
 	color: @base;
-	border-left: 4px solid @peach;
+	border-left: 3px solid @peach;
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
@@ -190,7 +190,7 @@ tooltip label {
   animation-timing-function: steps(12);
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  border-left: 4px solid @maroon;
+  border-left: 3px solid @maroon;
 }
 
 /* -----------------------------------------------------------------------------
@@ -200,7 +200,7 @@ tooltip label {
 #backlight {
 	background: @background-primary;
 	color: @yellow;
-	border-left: 4px solid @yellow;
+	border-left: 3px solid @yellow;
 	border-radius: 12px 0 0 12px;
 	margin: 6px 0 6px 2px;
 	padding: 8px 12px;
@@ -209,7 +209,7 @@ tooltip label {
 #pulseaudio {
 	background: @background-primary;
 	color: @yellow;
-	border-left: 4px solid @yellow;
+	border-left: 3px solid @yellow;
 	border-radius: 0 12px 12px 0;
 	margin: 6px 2px 6px 0;
 	padding: 8px 12px;
@@ -217,7 +217,7 @@ tooltip label {
 
 #pulseaudio.muted {
 	color: @subtext0;
-	border-left: 4px solid @subtext0;
+	border-left: 3px solid @subtext0;
 }
 
 /* -----------------------------------------------------------------------------
@@ -227,40 +227,40 @@ tooltip label {
 #network {
 	background: @background-primary;
 	color: @sapphire;
-	border-left: 4px solid @sapphire;
-	margin: 6px 2px 6px 2px;
+	border-left: 3px solid @sapphire;
+	margin: 6px 2px;
 	padding: 8px 12px;
 	border-radius: 12px;
 }
 
 #network.disconnected {
 	color: @error;
-	border-left: 4px solid @error;
+	border-left: 3px solid @error;
 }
 
 #network.disabled {
 	color: @subtext0;
-	border-left: 4px solid @subtext0;
+	border-left: 3px solid @subtext0;
 }
 
 
 #bluetooth {
 	background: @background-primary;
 	color: @sapphire;
-	border-left: 4px solid @sapphire;
-	margin: 6px 0px 6px 2px;
+	border-left: 3px solid @sapphire;
+	margin: 6px 2px;
 	padding: 8px 12px;
 	border-radius: 12px;
 }
 
 #bluetooth.disconnected {
 	color: @error;
-	border-left: 4px solid @error;
+	border-left: 3px solid @error;
 }
 
 #bluetooth.disabled {
 	color: @subtext0;
-	border-left: 4px solid @subtext0;
+	border-left: 3px solid @subtext0;
 }
 
 /* -----------------------------------------------------------------------------
@@ -270,7 +270,7 @@ tooltip label {
 #language {
 	background: @background-primary;
 	color: @mauve;
-	border-right: 4px solid @mauve;
+	border-right: 3px solid @mauve;
 	margin: 6px 2px 6px 2px;
 	padding: 6px 10px;
 	border-radius: 12px 12px 12px 12px;

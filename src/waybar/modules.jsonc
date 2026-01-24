@@ -35,7 +35,7 @@
 	// Hyprland window
 	"hyprland/window": {
 		"format": "{}",
-		"max-length": 22,
+		"max-length": 20,
 		"rewrite": {
 			"": "Desktop",
 			".*Firefox.*": "Firefox",
