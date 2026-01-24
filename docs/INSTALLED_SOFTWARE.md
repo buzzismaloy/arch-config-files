@@ -154,9 +154,7 @@
 
 ### Security
 
-- `keepassxc` - Password manager
-- `gufw` - Firewall
-- `veracrypt` - Encryption
+- `ufw` - Firewall
 
 ## 6. Theming & Fonts
 
@@ -181,5 +179,4 @@
 ### AUR Helpers
 
 - `yay` — AUR helper [AUR]
-
 - `yay-debug` — Debug symbols [AUR]
