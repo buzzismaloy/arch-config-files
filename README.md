@@ -9,7 +9,6 @@
 [![Wofi](https://img.shields.io/badge/Wofi-0f1419?style=for-the-badge&logo=wofi&logoColor=EBA0AC)](https://github.com/SimplyCEO/wofi)
 [![Kitty](https://img.shields.io/badge/Kitty-F46D01?style=for-the-badge&logo=kitty&logoColor=white)](https://github.com/kovidgoyal/kitty)
 
-<br>
 
 ### 📊 Project Stats
 [![Last Commit](https://img.shields.io/github/last-commit/buzzismaloy/arch-config-files?style=for-the-badge&logo=github&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41)](https://github.com/buzzismaloy/arch-config-files/commits/main/)
@@ -41,12 +40,26 @@
 
 <!-- IMAGES -->
 ## Gallery
-![gallery](assets/screenshots/2.png)
-![gallery](assets/screenshots/3.png)
-![gallery](assets/screenshots/4.ppg)
-![gallery](assets/screenshots/5.ppg)
-![gallery](assets/screenshots/6.jpg)
 
+<details>
+<summary> Click to see more screenshots</summary>
+
+### Desktop Appearance
+![gallery](assets/screenshots/2.png)
+
+### Multiple Windows
+![gallery](assets/screenshots/3.png)
+
+### Application Launcher
+![gallery](assets/screenshots/4.png)
+
+### File Manager
+![gallery](assets/screenshots/5.png)
+
+### Wlogout Menu
+![gallery](assets/screenshots/6.png)
+
+</details>
 
 <!-- INSTALLATION -->
 ## Installation
