@@ -69,28 +69,6 @@
 - [**Shell Scripts**](./docs/SHELL_SCRIPTS.md) - Custom utility scripts
 - [**Hotkeys**](./docs/HOTKEYS.md) - Hotkeys used in current configuration
 
-<!-- INSTALLATION -->
-## Installation
-
-```bash
-git clone https://github.com/buzzismaloy/dotfiles-hyprland.git && cd dotfiles-hyprland/src/
-```
-
-```bash
-mv fastfetch/* ~/.config/fastfetch/
-mv hypr/* ~/.config/hypr/
-mv kitty/* ~/.config/kitty/
-mv waybar/* ~/.config/waybar/
-mv wlogout/* ~/.config/wlogout/
-mv wofi/* ~/.config/wofi/
-```
-
-To show fetch every time kitty is started:
-
-```bash
-cp fish/config.fish ~/.config/fish/config.fish
-```
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.⏎  
