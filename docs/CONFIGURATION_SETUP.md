@@ -81,6 +81,6 @@ reboot
 ## Documentation
 
 - [Hotkeys](./HOTKEYS.md) - Hotkeys used in current configuration
-- [Shell Scripts](./SHELL_SCRIPTS.md) - scripts description
-- [Software List](./INSTALLED_SOFTWARE.md) - all packages installed
+- [Shell Scripts](./SHELL_SCRIPTS.md) - Scripts description
+- [Software List](./INSTALLED_SOFTWARE.md) - All packages installed
 
