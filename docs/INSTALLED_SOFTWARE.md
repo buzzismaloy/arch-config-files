@@ -123,13 +123,13 @@
 
 ### Programming Languages
 
-- Python
-- Node.js
-- Go
-- C/C++
-- Java
-- Rust
-- C#
+- `Python`
+- `Node.js`
+- `Go`
+- `C/C++`
+- `Java`
+- `Rust`
+- `C#`
 
 ## 5. Applications
 
