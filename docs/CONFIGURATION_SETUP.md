@@ -53,6 +53,9 @@ cp -r assets/wallpaper ~/wallpapers
 
 # Hyprlock avatar
 cp assets/.face.jpg ~/
+
+# To show fetch every time kitty is started
+cp fish/config.fish ~/.config/fish/config.fish
 ```
 
 ---
