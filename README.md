@@ -2,14 +2,12 @@
 
 # Arch Configuration Files
 
-<br>
-
 ### 🛠️ Tech Stack
 [![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge)](https://archlinux.org)
 [![Hyprland](https://img.shields.io/badge/Hyprland-2E3440?style=for-the-badge&logo=linux&logoColor=81A1C1)](https://hyprland.org)
 [![Waybar](https://img.shields.io/badge/Waybar-1f2335?style=for-the-badge&logo=gnome&logoColor=8AADF4)](https://github.com/Alexays/Waybar)
 [![Wofi](https://img.shields.io/badge/Wofi-0f1419?style=for-the-badge&logo=rofi&logoColor=EBA0AC)](https://github.com/SimplyCEO/wofi)
-[![Kitty](https://img.shields.io/badge/Kitty-F46D01?style=for-the-badge&logo=alacritty&logoColor=white)](https://github.com/kovidgoyal/kitty)
+[![Kitty](https://img.shields.io/badge/Kitty-F46D01?style=for-the-badge&logo=kitty&logoColor=white)](https://github.com/kovidgoyal/kitty)
 
 <br>
 
