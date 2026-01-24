@@ -35,13 +35,15 @@
 	// Hyprland window
 	"hyprland/window": {
 		"format": "{}",
-		"max-length": 20,
+		"max-length": 22,
 		"rewrite": {
 			"": "Desktop",
 			".*Firefox.*": "Firefox",
-			"^~$": "Kitty terminal"
+			"^~$": "Kitty terminal",
+			"^vim ~?$": "Vim"
 		},
-		"separate-outputs": true,
+		"tooltip" : false,
+		"separate-outputs": true
 	},
 
 	// Time and calendar
@@ -182,7 +184,7 @@
 	},
 
 	// Keyboard state
-	"keyboard-state": {	
+	"keyboard-state": {
 		"capslock": true,
 		"format": {
 			"capslock": "{name} {icon}"

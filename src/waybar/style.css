@@ -83,7 +83,7 @@ tooltip label {
 }
 
 #workspaces button.empty {
-	opacity: 0.3;
+	opacity: 0.4;
 	background: @background-secondary;
 }
 
