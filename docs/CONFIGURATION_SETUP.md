@@ -77,7 +77,7 @@ reboot
 
 ## Documentation
 
-- 🐟 [Hotkeys](./HOTKEYS.md) - Hotkeys used in current configuration
-- 🔧 [Shell Scripts](./SHELL_SCRIPTS.md) - scripts description
-- 📦 [Software List](./INSTALLED_SOFTWARE.md) - all packages installed
+- [Hotkeys](./HOTKEYS.md) - Hotkeys used in current configuration
+- [Shell Scripts](./SHELL_SCRIPTS.md) - scripts description
+- [Software List](./INSTALLED_SOFTWARE.md) - all packages installed
 
