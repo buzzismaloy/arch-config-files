@@ -61,6 +61,14 @@
 
 </details>
 
+<!-- Documentation -->
+## 📚 Documentation
+
+- [**Configuration Setup**](./docs/CONFIGURATION_SETUP.md) - Transfer dotfiles to new system
+- [**Software List**](./docs/ARCH_SOFTWARE.md) - Installed packages
+- [**Shell Scripts**](./docs/SHELL_SCRIPTS.md) - Custom utility scripts
+- [**Hotkeys**](./docs/HOTKEYS.md) - Hotkeys used in current configuration
+
 <!-- INSTALLATION -->
 ## Installation
 
@@ -82,6 +90,10 @@ To show fetch every time kitty is started:
 ```bash
 cp fish/config.fish ~/.config/fish/config.fish
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.⏎  
 
 ## See also
 
