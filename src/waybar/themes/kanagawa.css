@@ -37,6 +37,9 @@
 @define-color pink      #d27e99;
 @define-color flamingo  #e82424;
 @define-color rosewater #dcd7ba;
+@define-color purple    #6c3baa;
+@define-color violet    #E5D0FF;
+@define-color lightblue #90D5FF;
 
 /* Additional styling variables - using solid colors instead of rgba */
 @define-color background-primary   #1f1f28;

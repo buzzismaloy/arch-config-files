@@ -18,10 +18,10 @@
 
 	"modules-right": [
 		"group/hardware",
+		"battery",
 		"backlight",
 		"group/volume",
 		"group/connections",
-		"battery",
 		"clock",
 		"custom/powermenu"
 	],

@@ -42,7 +42,7 @@
 			"^~$": "Kitty terminal",
 			"^vim ~?$": "Vim"
 		},
-		"tooltip" : false,
+		"tooltip": false,
 		"separate-outputs": true
 	},
 
@@ -137,7 +137,8 @@
 	"backlight": {
 		"format": "{icon} {percent}%",
 		"format-icons": ["", ""],
-		"tooltip": false,
+		"tooltip": true,
+		"tooltip-format": "Scroll with the mouse wheel",
 		"on-scroll-down": "brightnessctl set 5%-",
 		"on-scroll-up": "brightnessctl set +5%"
 	},
