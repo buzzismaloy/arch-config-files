@@ -54,7 +54,7 @@ tooltip label {
 	padding: 4px;
 	margin: 2px 6px;
 	border-radius: 12px;
-	border: 2px solid @mauve;
+	border: 2px solid @violet;
 }
 
 #workspaces button {
@@ -70,7 +70,7 @@ tooltip label {
 #workspaces button:hover {
 	background: @background-hover;
 	color: @lavender;
-	border-color: @mauve;
+	border-color: @violet;
 }
 
 #workspaces button.active,
@@ -135,8 +135,8 @@ tooltip label {
 
 #cpu {
 	background: @background-primary;
-	color: @violet;
-	border-left: 3px solid @violet;
+	color: @mauve;
+	border-left: 3px solid @mauve;
 	border-radius: 12px 0px 0px 12px;
 	margin: 2px 0px 2px 2px;
 	padding: 8px 12px;
@@ -269,8 +269,8 @@ tooltip label {
 
 #language {
 	background: @background-primary;
-	color: @mauve;
-	border-right: 3px solid @mauve;
+	color: @violet;
+	border-right: 3px solid @violet;
 	margin: 2px 2px;
 	padding: 6px 10px;
 	border-radius: 12px 12px 12px 12px;
@@ -312,11 +312,11 @@ tooltip label {
 	padding: 6px 10px;
 	margin: 2px 4px 2px 2px;
 	border-radius: 12px;
-	border: 2px solid @mauve;
+	border: 2px solid @violet;
 }
 
 #tray > .passive {
-	opacity: 0.7;
+	opacity: 0.65;
 }
 
 #tray > .needs-attention {
