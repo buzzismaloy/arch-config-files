@@ -1,7 +1,30 @@
+<div align="center">
+
+# Arch Configuration Files
+
+<br>
+
+### 🛠️ Tech Stack
+[![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge)](https://archlinux.org)
+[![Hyprland](https://img.shields.io/badge/Hyprland-2E3440?style=for-the-badge&logo=linux&logoColor=81A1C1)](https://hyprland.org)
+[![Waybar](https://img.shields.io/badge/Waybar-1f2335?style=for-the-badge&logo=gnome&logoColor=8AADF4)](https://github.com/Alexays/Waybar)
+[![Wofi](https://img.shields.io/badge/Wofi-0f1419?style=for-the-badge&logo=rofi&logoColor=EBA0AC)](https://github.com/SimplyCEO/wofi)
+[![Kitty](https://img.shields.io/badge/Kitty-F46D01?style=for-the-badge&logo=alacritty&logoColor=white)](https://github.com/kovidgoyal/kitty)
+
+<br>
+
+### 📊 Project Stats
+[![Last Commit](https://img.shields.io/github/last-commit/Zilero232/arch-install-kit?style=for-the-badge&logo=github&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41)](https://github.com/buzzismaloy/arch-config-files/commits/main/)
+[![License](https://img.shields.io/github/license/Zilero232/arch-install-kit?style=for-the-badge&logo=github&color=F2CDCD&logoColor=D9E0EE&labelColor=302D41)](https://github.com/buzzismaloy/arch-config-files/blob/main/LICENSE)
+
+</div>
+
+<br>
+
 <!-- INFORMATION -->
 <h1 align="left">About</h1>
 
-<img src="assets/screenshots/2.png" alt="rice" align="right" width="500px">
+<img src="assets/screenshots/1.png" alt="rice" align="right" width="500px">
 
 </br>
 
@@ -11,6 +34,8 @@
  - Terminal: **`Kitty`**
  - App Launcher: **`Wofi`**
  - Shell: **`Fish`**
+ - File Manager: **`Thunar/Dolphin`**
+ - GUI Text editor: **`Mousepad`**
  - Logout menu: **`Wlogout`**
 
 </br>
@@ -18,32 +43,12 @@
 
 <!-- IMAGES -->
 ## Gallery
-![gallery](assets/screenshots/1.jpg)
 ![gallery](assets/screenshots/2.png)
-![gallery](assets/screenshots/3.jpg)
-![gallery](assets/screenshots/4.jpg)
-![gallery](assets/screenshots/5.jpg)
+![gallery](assets/screenshots/3.png)
+![gallery](assets/screenshots/4.ppg)
+![gallery](assets/screenshots/5.ppg)
+![gallery](assets/screenshots/6.jpg)
 
-<!-- HOTKEYS -->
-## HotKeys
-* **Open the terminal** - `super + enter`
-* **Close active window** - `super + q`
-* **Open file manager** - `super + e`
-* **Open the application menu** - `super + w`
-* **Open firefox** - `super + f`
-* **Lock the screen** - `super + l`
-* **Take a screenshot** - `print`
-* **Switch to another workspace** - `super + [0-9]`
-* **Move focus within workspace** - `super + [←, ↑, →, ↓]`
-* **Move window within workspace silently** - `super + shift + [←, ↑, →, ↓]`
-* **Toggle floating** - `super + k`
-* **Start obsidian** - `super + b`
-* **Start visual studio code** - `super + c`
-* **Open clipboard within wofi** - `super + v`
-* **Switch on/off waybar** - `super + u`
-* **Reload waybar config** - `super + i`
-
-The other hotkeys are in `~/.config/hypr/hyprland.conf`.
 
 <!-- INSTALLATION -->
 ## Installation
