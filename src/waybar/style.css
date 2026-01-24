@@ -226,8 +226,8 @@ tooltip label {
 
 #network {
 	background: @background-primary;
-	color: @green;
-	border-left: 4px solid @green;
+	color: @sapphire;
+	border-left: 4px solid @sapphire;
 	margin: 6px 2px;
 	padding: 8px 12px;
 	border-radius: 12px;
@@ -246,8 +246,8 @@ tooltip label {
 
 #bluetooth {
 	background: @background-primary;
-	color: @green;
-	border-left: 4px solid @green;
+	color: @sapphire;
+	border-left: 4px solid @sapphire;
 	margin: 6px 2px;
 	padding: 8px 12px;
 	border-radius: 12px;
