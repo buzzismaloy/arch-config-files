@@ -1,9 +1,7 @@
 {
 	// Language(hyprland)
 	"hyprland/language": {
-		"format": "{shortDescription} 󰌌 ",
-		//"tooltip": true,
-		//"tooltip-format": "{long}"
+		"format": "{shortDescription} 󰌌 "
 	},
 
 	// Tray
@@ -78,7 +76,7 @@
 		"interval": 20
 	},
 
-	"temperatue": {
+	"temperature": {
 		"format": "{icon} {temperatureC}°C",
 		"format-icons": ["", "", ""],
 		"tooltip": false,
