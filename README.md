@@ -50,14 +50,17 @@
 ### Multiple Windows
 ![gallery](assets/screenshots/3.png)
 
-### Application Launcher
+### Application Menu
 ![gallery](assets/screenshots/4.png)
 
-### File Manager
+## Application Launcher
 ![gallery](assets/screenshots/5.png)
 
-### Wlogout Menu
+### File Manager
 ![gallery](assets/screenshots/6.png)
+
+### Wlogout Menu
+![gallery](assets/screenshots/7.png)
 
 </details>
 
@@ -71,7 +74,7 @@
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.⏎  
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.⏎
 
 ## See also
 
