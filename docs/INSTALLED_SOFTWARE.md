@@ -96,6 +96,7 @@
 ### Application Launcher
 
 - `wofi` - Launcher
+- `wofi-calc` - A simple calculator for wofi
 
 ### Desktop
 
