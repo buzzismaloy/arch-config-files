@@ -1,4 +1,9 @@
 window {
+  margin: 0;
+  border-radius: 12px 12px 12px 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow:
+	0 8px 20px rgba(0, 0, 0, 0.45);
   background-color: #1a1b26;
 }
 
@@ -16,14 +21,14 @@ window {
   color: #c0caf5;
   outline: none;
   box-shadow: none;
-  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 0;
   font-size: 1rem;
   padding: 0.5rem;
 }
 
 #inner-box {
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 0.75rem 0.5rem;
   font-size: 1rem;
 }
 
@@ -33,6 +38,7 @@ window {
 
 #entry {
   border-radius: 0.5rem;
+  transition: background-color 0.5s ease;
 }
 
 #entry:selected {

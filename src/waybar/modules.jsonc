@@ -178,7 +178,7 @@
 	// Launcher wofi
 	"custom/launcher": {
 		"format": "",
-		"on-click": "wofi --show drun",
+		"on-click": "~/.config/wofi/scripts/smart-launcher.sh",
 		"tooltip": false
 	},
 
