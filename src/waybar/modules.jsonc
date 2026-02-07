@@ -47,9 +47,33 @@
 	// Time and calendar
 	"clock": {
 		"tooltip-format": "<tt><small>{calendar}</small></tt>",
-		"format": "{:%I:%M%p %a}",
-		"format-alt": "{:%Y-%m-%d}",
+		"format": "{:%I:%M%p %a,%d/%m}",
+		"format-alt": "{:%d/%m/%Y}",
 		"interval": 30,
+		"calendar": {
+			"mode": "month",
+			"mode-mon-col": 3,
+			"weeks-pos": "right",
+			"format": {
+				"months": "<span color='#ffead3'><b>{}</b></span>",
+				"days": "<span color='#ecc6d9'><b>{}</b></span>",
+				"weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+				"weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+				"today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+			}
+		}
+	},
+
+	"clock#time": {
+		"format": "{:%I:%M %p}",
+		"max-length": 9,
+		"tooltip": false
+	},
+
+	"clock#date": {
+		"format": "󰸗 {:%a, %d}",
+		"format-alt": "󰸗 {:%d/%m/%Y}",
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
 		"calendar": {
 			"mode": "month",
 			"mode-mon-col": 3,
@@ -78,7 +102,8 @@
 
 	"temperature": {
 		"format": "{icon} {temperatureC}°C",
-		"format-icons": ["", "", ""],
+		//"format-icons": ["", "", ""],
+		"format-icons": ["", "󱃃", "󰔏", "󱃂"],
 		"tooltip": false,
 		"critical-threshold": 80
 	},
@@ -166,7 +191,10 @@
 			"car": "",
 			"default": ["", "", ""]
 		},
-      "on-click": "pavucontrol"
+		"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+		"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
+		"on-click": "pavucontrol",
+		"on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 	},
 
 	// Microphone
@@ -175,7 +203,8 @@
 		"format-source": " {volume}%",
 		"format-source-muted": "",
 		"on-click": "pavucontrol",
-		"tooltip": true,
+		"on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+		"tooltip": true
 	},
 
 	// Powermenu

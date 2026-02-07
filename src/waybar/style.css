@@ -24,7 +24,8 @@
 }
 
 window#waybar {
-	background: rgba(15, 15, 20, 0.12);
+	/*background: rgba(15, 15, 20, 0.12);*/
+	background: transparent;
 	border-radius: 12px
 }
 
@@ -122,6 +123,26 @@ tooltip label {
 	border-radius: 12px;
 }
 
+#clock.time {
+	background: @background-primary;
+	color: @cyan;
+	border-left: 3px solid @cyan;
+	font-weight: bold;
+	margin: 0 0 0 2px;
+	padding: 2px 12px;
+	border-radius: 12px 0 0 12px;
+}
+
+#clock.date {
+	background: @background-primary;
+	color: @cyan;
+	border-left: 3px solid @cyan;
+	font-weight: bold;
+	margin: 0 4px 0 0;
+	padding: 2px 12px;
+	border-radius: 0 12px 12px 0;
+}
+
 /* -----------------------------------------------------------------------------
 * System monitoring modules
 * -------------------------------------------------------------------------- */
@@ -146,8 +167,8 @@ tooltip label {
 
 #temperature {
 	background: @background-primary;
-	color: @lightblue;
-	border-left: 3px solid @lightblue;
+	color: @blue;
+	border-left: 3px solid @blue;
 	border-radius: 12px 0 0 12px;
 	margin: 0 0 0 1px;
 	padding: 2px 12px;
@@ -156,7 +177,7 @@ tooltip label {
 #temperature.critical {
 	background: @error;
 	color: @base;
-	border-left: 3px solid @maroon;
+	border-left: 3px solid @error;
 }
 
 /* -----------------------------------------------------------------------------
@@ -192,7 +213,7 @@ tooltip label {
   animation-timing-function: steps(12);
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  border-left: 3px solid @maroon;
+  border-left: 3px solid @error;
 }
 
 /* -----------------------------------------------------------------------------
@@ -248,8 +269,8 @@ tooltip label {
 
 #bluetooth {
 	background: @background-primary;
-	color: @sapphire;
-	border-left: 3px solid @sapphire;
+	color: @lightblue;
+	border-left: 3px solid @lightblue;
 	margin: 0 2px;
 	padding: 2px 12px;
 	border-radius: 12px;
@@ -288,7 +309,7 @@ tooltip label {
 	color: @base;
 	font-size: 20px;
 	font-weight: bold;
-	margin: 0 2px 0 8px;
+	margin: 0 2px 0 4px;
 	padding: 2px 14px 2px 6px;
 	border-radius: 12px;
 	border: 2px solid @pink;

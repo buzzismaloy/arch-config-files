@@ -22,7 +22,8 @@
 		"backlight",
 		"group/volume",
 		"group/connections",
-		"clock",
+		"clock#time",
+		"clock#date"
 	],
 
 	"group/hardware": {
