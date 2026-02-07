@@ -179,6 +179,7 @@
 	// Audio
 	"pulseaudio": {
 		"format": "{icon} {volume}%",
+		"tooltip-format": "Scroll with the mouse wheel",
 		"format-bluetooth": "{volume}% {icon}",
 		"format-bluetooth-muted": " {icon}",
 		"format-muted": "",
