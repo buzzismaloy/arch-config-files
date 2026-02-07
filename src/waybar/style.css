@@ -16,7 +16,7 @@
 	border: none;
 	border-radius: 0;
 	font-family: 'JetBrains Mono', 'Hack Nerd Font', 'UbuntuMono', monospace;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: 600;
 	min-height: 0;
 	padding: 0;
@@ -24,8 +24,8 @@
 }
 
 window#waybar {
-	background: rgba(15, 15, 20, 0.3);
-	border-radius: 20px
+	background: rgba(15, 15, 20, 0.12);
+	border-radius: 12px
 }
 
 /* -----------------------------------------------------------------------------
@@ -51,20 +51,21 @@ tooltip label {
 
 #workspaces {
 	background: @background-primary;
-	padding: 4px;
-	margin: 2px 6px;
+	padding: 2px 4px;
+	margin: 0 6px;
 	border-radius: 12px;
 	border: 2px solid @violet;
 }
 
 #workspaces button {
-	padding: 6px 10px;
-	margin: 0 2px;
+	padding: 4px 10px;
+	margin: 2px;
 	background: @background-primary;
 	color: @subtext0;
 	border-radius: 8px;
 	font-weight: bold;
 	border: 1px solid @border-color;
+	min-width: 20px;
 }
 
 #workspaces button:hover {
@@ -79,6 +80,8 @@ tooltip label {
 	font-weight: bold;
 	opacity: 1;
 	border-color: @flamingo;
+	min-width: 45px;
+	border-radius: 15px;
 }
 
 #workspaces button.empty {
@@ -99,8 +102,8 @@ tooltip label {
 #window {
 	background: @background-secondary;
 	color: @text;
-	padding: 8px 16px;
-	margin: 2px;
+	padding: 2px 16px;
+	margin: 0 2px;
 	border-radius: 32px;
 	border: 2px solid @rosewater;
 	font-weight: 600;
@@ -114,10 +117,9 @@ tooltip label {
 	background: @blue;
 	color: @base;
 	font-weight: bold;
-	margin: 2px 2px;
-	padding: 8px 12px;
+	margin: 0 2px;
+	padding: 2px 12px;
 	border-radius: 12px;
-	font-size: 12px;
 }
 
 /* -----------------------------------------------------------------------------
@@ -128,18 +130,18 @@ tooltip label {
 	background: @background-primary;
 	color: @teal;
 	border-left: 3px solid @teal;
-	border-radius: 0px 12px 12px 0px;
-	margin: 2px 1px 2px 0px;
-	padding: 8px 12px;
+	border-radius: 0 12px 12px 0px;
+	margin: 0 1px 0 0;
+	padding: 2px 12px;
 }
 
 #cpu {
 	background: @background-primary;
 	color: @mauve;
 	border-left: 3px solid @mauve;
-	border-radius: 12px 0px 0px 12px;
-	margin: 2px 0px 2px 2px;
-	padding: 8px 12px;
+	border-radius: 12px 0 0 12px;
+	margin: 0 0 0 2px;
+	padding: 2px 12px;
 }
 
 #temperature {
@@ -147,8 +149,8 @@ tooltip label {
 	color: @lightblue;
 	border-left: 3px solid @lightblue;
 	border-radius: 12px 0 0 12px;
-	margin: 2px 0 2px 1px;
-	padding: 8px 12px;
+	margin: 0 0 0 1px;
+	padding: 2px 12px;
 }
 
 #temperature.critical {
@@ -165,8 +167,8 @@ tooltip label {
 	background: @background-primary;
 	color: @green;
 	border-left: 3px solid @green;
-	margin: 2px 2px 2px 0;
-	padding: 8px 12px;
+	margin: 0 2px 0 0;
+	padding: 2px 12px;
 	border-radius: 0 12px 12px 0;
 }
 
@@ -202,8 +204,8 @@ tooltip label {
 	color: @yellow;
 	border-left: 3px solid @yellow;
 	border-radius: 12px 0 0 12px;
-	margin: 2px 0 2px 2px;
-	padding: 8px 12px;
+	margin: 0 0 0 2px;
+	padding: 2px 12px;
 }
 
 #pulseaudio {
@@ -211,8 +213,8 @@ tooltip label {
 	color: @yellow;
 	border-left: 3px solid @yellow;
 	border-radius: 0 12px 12px 0;
-	margin: 2px 2px 2px 0;
-	padding: 8px 12px;
+	margin: 0 2px 0 0;
+	padding: 2px 12px;
 }
 
 #pulseaudio.muted {
@@ -228,8 +230,8 @@ tooltip label {
 	background: @background-primary;
 	color: @sapphire;
 	border-left: 3px solid @sapphire;
-	margin: 2px 2px;
-	padding: 8px 12px;
+	margin: 0 2px;
+	padding: 2px 12px;
 	border-radius: 12px;
 }
 
@@ -248,8 +250,8 @@ tooltip label {
 	background: @background-primary;
 	color: @sapphire;
 	border-left: 3px solid @sapphire;
-	margin: 2px 2px;
-	padding: 8px 12px;
+	margin: 0 2px;
+	padding: 2px 12px;
 	border-radius: 12px;
 }
 
@@ -271,9 +273,9 @@ tooltip label {
 	background: @background-primary;
 	color: @violet;
 	border-right: 3px solid @violet;
-	margin: 2px 2px;
-	padding: 6px 10px;
-	border-radius: 12px 12px 12px 12px;
+	margin: 0 2px;
+	padding: 2px 10px;
+	border-radius: 12px;
 }
 
 
@@ -286,7 +288,7 @@ tooltip label {
 	color: @base;
 	font-size: 20px;
 	font-weight: bold;
-	margin: 2px 2px 2px 8px;
+	margin: 0 2px 0 8px;
 	padding: 2px 14px 2px 6px;
 	border-radius: 12px;
 	border: 2px solid @pink;
@@ -297,7 +299,7 @@ tooltip label {
 	color: @base;
 	font-size: 22px;
 	font-weight: bold;
-	margin: 2px 8px 2px 2px;
+	margin: 0 8px 0 2px;
 	padding: 2px 10px;
 	border-radius: 12px;
 	border: 2px solid @pink;
@@ -309,8 +311,8 @@ tooltip label {
 
 #tray {
 	background: @background-secondary;
-	padding: 6px 10px;
-	margin: 2px 4px 2px 2px;
+	padding: 2px 10px;
+	margin: 0 4px 0 2px;
 	border-radius: 12px;
 	border: 2px solid @violet;
 }
@@ -333,8 +335,8 @@ tooltip label {
 	background: @background-primary;
 	color: @yellow;
 	border-left: 3px solid @yellow;
-	margin: 2px 2px;
-	padding: 8px 12px;
+	margin: 0 2px;
+	padding: 2px 12px;
 	border-radius: 12px;
 }
 
@@ -348,8 +350,8 @@ tooltip label {
 	background: @warning;
 	color: @base;
 	font-weight: bold;
-	padding: 8px 16px;
-	margin: 2px 8px;
+	padding: 2px 16px;
+	margin: 0 8px;
 	border-radius: 12px;
 }
 
