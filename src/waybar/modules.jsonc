@@ -134,7 +134,17 @@
 	// Backlight
 	"backlight": {
 		"format": "{icon} {percent}%",
-		"format-icons": ["", ""],
+		//"format-icons": ["", ""],
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			""
+		],
 		"tooltip": true,
 		"tooltip-format": "Scroll with the mouse wheel",
 		"on-scroll-down": "brightnessctl set 5%-",
