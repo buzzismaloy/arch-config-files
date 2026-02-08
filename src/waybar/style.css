@@ -243,6 +243,21 @@ tooltip label {
 	border-left: 3px solid @subtext0;
 }
 
+
+#pulseaudio.microphone {
+	background: @background-primary;
+	color: @yellow;
+	border-left: 3px solid @yellow;
+	border-radius: 0;
+	margin: 0;
+	padding: 2px 12px;
+}
+
+#pulseaudio.microphone.muted {
+	color: @subtext0;
+	border-left: 3px solid @subtext0;
+}
+
 /* -----------------------------------------------------------------------------
 * Network and bluetooth
 * -------------------------------------------------------------------------- */
