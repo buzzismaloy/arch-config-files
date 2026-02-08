@@ -53,7 +53,7 @@
 ### Application Menu
 ![gallery](assets/screenshots/4.png)
 
-## Application Launcher
+### Application Launcher
 ![gallery](assets/screenshots/5.png)
 
 ### File Manager
