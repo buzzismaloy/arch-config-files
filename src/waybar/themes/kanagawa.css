@@ -50,7 +50,7 @@
 
 /* Status colors */
 @define-color success @green;
-@define-color warning @yellow;
+@define-color warning @peach;
 @define-color error   @red;
 @define-color info    @blue;
 

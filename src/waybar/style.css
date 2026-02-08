@@ -101,12 +101,12 @@ tooltip label {
 * -------------------------------------------------------------------------- */
 
 #window {
-	background: @background-secondary;
-	color: @text;
+	background: @cyan;
+	color: @background-secondary;
 	padding: 2px 16px;
 	margin: 0 2px;
 	border-radius: 32px;
-	border: 2px solid @rosewater;
+	border: 2px solid @background-primary;
 	font-weight: 600;
 }
 
@@ -125,8 +125,8 @@ tooltip label {
 
 #clock.time {
 	background: @background-primary;
-	color: @cyan;
-	border-left: 3px solid @cyan;
+	color: @yellow;
+	border-left: 3px solid @yellow;
 	font-weight: bold;
 	margin: 0 0 0 2px;
 	padding: 2px 12px;
@@ -135,8 +135,9 @@ tooltip label {
 
 #clock.date {
 	background: @background-primary;
-	color: @cyan;
-	border-left: 3px solid @cyan;
+	color: @yellow;
+	border-left: 3px solid @yellow;
+	border-right: 3px solid @yellow;
 	font-weight: bold;
 	margin: 0 4px 0 0;
 	padding: 2px 12px;
@@ -194,14 +195,14 @@ tooltip label {
 }
 
 #battery.charging {
-	color: @yellow;
-	border-left: 3px solid @yellow;
+	color: @peach;
+	border-left: 3px solid @peach;
 }
 
 #battery.warning {
 	background: @warning;
 	color: @base;
-	border-left: 3px solid @peach;
+	border-left: 3px solid @warning;
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
@@ -222,8 +223,8 @@ tooltip label {
 
 #backlight {
 	background: @background-primary;
-	color: @yellow;
-	border-left: 3px solid @yellow;
+	color: @rosewater;
+	border-left: 3px solid @rosewater;
 	border-radius: 12px 0 0 12px;
 	margin: 0 0 0 2px;
 	padding: 2px 12px;
@@ -231,8 +232,8 @@ tooltip label {
 
 #pulseaudio {
 	background: @background-primary;
-	color: @yellow;
-	border-left: 3px solid @yellow;
+	color: @rosewater;
+	border-left: 3px solid @rosewater;
 	border-radius: 0 12px 12px 0;
 	margin: 0 2px 0 0;
 	padding: 2px 12px;
@@ -246,8 +247,8 @@ tooltip label {
 
 #pulseaudio.microphone {
 	background: @background-primary;
-	color: @yellow;
-	border-left: 3px solid @yellow;
+	color: @rosewater;
+	border-left: 3px solid @rosewater;
 	border-radius: 0;
 	margin: 0;
 	padding: 2px 12px;
@@ -309,9 +310,9 @@ tooltip label {
 	background: @background-primary;
 	color: @violet;
 	border-right: 3px solid @violet;
-	margin: 0 2px;
+	margin: 0;
 	padding: 2px 10px;
-	border-radius: 12px;
+	border-radius: 12px 0 0 12px;
 }
 
 
@@ -327,7 +328,8 @@ tooltip label {
 	margin: 0 2px 0 4px;
 	padding: 2px 14px 2px 6px;
 	border-radius: 12px;
-	border: 2px solid @pink;
+	border-left: 3px solid @pink;
+	border-right: 3px solid @pink;
 }
 
 #custom-powermenu {
@@ -339,6 +341,15 @@ tooltip label {
 	padding: 2px 10px;
 	border-radius: 12px;
 	border: 2px solid @pink;
+}
+
+#custom-caps {
+	background: @background-primary;
+	color: @violet;
+	border-right: 3px solid @violet;
+	margin: 0 2px 0 0;
+	padding: 2px 10px;
+	border-radius: 0 12px 12px 0;
 }
 
 /* -----------------------------------------------------------------------------
@@ -406,6 +417,7 @@ tooltip label {
 #pulseaudio:hover,
 #custom-powermenu:hover,
 #custom-launcher:hover,
+#custom-caps:hover,
 #language:hover {
 	opacity: 0.8;
 }

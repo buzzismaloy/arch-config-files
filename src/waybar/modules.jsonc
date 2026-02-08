@@ -222,6 +222,13 @@
 		"tooltip": false
 	},
 
+	// Custom caps state
+	"custom/caps": {
+		"exec": "~/.config/waybar/scripts/caps.sh",
+		"tooltip": false,
+		"interval": 1
+	},
+
 	// Keyboard state
 	"keyboard-state": {
 		"capslock": true,
