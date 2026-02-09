@@ -6,6 +6,7 @@
 * **Open file manager** - `super + e`
 * **Open the application menu** - `super + w`
 * **Open firefox** - `super + f`
+* **Open firefox in a private mode** - `super + shift + f`
 * **Open obsidian** - `super + b`
 * **Open visual studio code** - `super + c`
 * **Open pycharm** - `super + j`
