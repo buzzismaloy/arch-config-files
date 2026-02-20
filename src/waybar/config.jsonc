@@ -3,13 +3,13 @@
 
 	"position": "top",
 	"layer": "top",
-	"height": 40,
+	"height": 35,
 
 	"modules-left": [
 		"custom/launcher",
 		"hyprland/workspaces",
 		"hyprland/language",
-		"custom/caps",
+		"keyboard-state",
 		"tray"
 	],
 

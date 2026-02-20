@@ -229,6 +229,7 @@
 		"interval": 1
 	},
 
+	// You must be a member of the input group to use this module (run usermod -a -G input [username] as root, then reboot)
 	// Keyboard state
 	"keyboard-state": {
 		"capslock": true,
@@ -236,7 +237,7 @@
 			"capslock": "{name} {icon}"
 		},
 		"format-icons": {
-			"locked": " ",
+			"locked": "",
 			"unlocked": ""
 		}
 	},
