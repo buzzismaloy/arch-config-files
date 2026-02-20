@@ -12,7 +12,7 @@
 
 ### 📊 Project Stats
 [![Last Commit](https://img.shields.io/github/last-commit/buzzismaloy/arch-config-files?style=for-the-badge&logo=github&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41)](https://github.com/buzzismaloy/arch-config-files/commits/main/)
-[![License](https://img.shields.io/github/license/Zilero232/arch-install-kit?style=for-the-badge&logo=github&color=F2CDCD&logoColor=D9E0EE&labelColor=302D41)](https://github.com/buzzismaloy/arch-config-files/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/buzzismaloy/arch-config-files?style=for-the-badge&logo=github&color=F2CDCD&logoColor=D9E0EE&labelColor=302D41)](https://github.com/buzzismaloy/arch-config-files/blob/main/LICENSE)
 
 </div>
 
