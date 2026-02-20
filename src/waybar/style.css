@@ -428,6 +428,7 @@ tooltip label {
 #custom-powermenu:hover,
 #custom-launcher:hover,
 #custom-caps:hover,
+#keyboard-state:hover,
 #language:hover {
 	opacity: 0.8;
 }
